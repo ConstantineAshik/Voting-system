@@ -15,6 +15,7 @@ $vote = $conn->query("SELECT * FROM voting_opt where id=".$_GET['id']);
 			<div class="form-group">
 				<label for="" class="control-label">Category</label>
 				<select name="category_id" id="" class="custom-select browser-default">
+					<!-- hello rafid bokachoda -->
 					<?php 
 						$cats = $conn->query("SELECT * FROM category_list order by id asc");
 						while($row=$cats->fetch_assoc()):
