@@ -5,7 +5,14 @@ $folders = $conn->query("SELECT * FROM folders where parent_id = $folder_parent 
 
 
 $files = $conn->query("SELECT * FROM files where folder_id = $folder_parent and user_id = '".$_SESSION['login_id']."'  order by name asc");
-
+<style>
+	.folder-item{
+		cursor: pointer;
+	}
+	.folder-item:hover{
+		background: #eaeaea;
+	    color: black;
+	    box-shadow: 3px 3px #0000000f;
 ?>
 <style>
 	.folder-item{
